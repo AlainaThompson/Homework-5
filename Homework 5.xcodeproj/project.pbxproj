@@ -17,6 +17,20 @@
 		094E72D127DBB44E005408FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E72A727DBB44C005408FF /* ContentView.swift */; };
 		094E72D227DBB44E005408FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094E72A827DBB44E005408FF /* Assets.xcassets */; };
 		094E72D327DBB44E005408FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094E72A827DBB44E005408FF /* Assets.xcassets */; };
+		09A358EC27EE10D2003817FC /* Matrix_Form_Schrodinger .swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358EB27EE10D2003817FC /* Matrix_Form_Schrodinger .swift */; };
+		09A358ED27EE10D2003817FC /* Matrix_Form_Schrodinger .swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358EB27EE10D2003817FC /* Matrix_Form_Schrodinger .swift */; };
+		09A358EF27EE10DE003817FC /* Potentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358EE27EE10DE003817FC /* Potentials.swift */; };
+		09A358F027EE10DE003817FC /* Potentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358EE27EE10DE003817FC /* Potentials.swift */; };
+		09A358F227EE1211003817FC /* PlotDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358F127EE1211003817FC /* PlotDataClass.swift */; };
+		09A358F327EE1211003817FC /* PlotDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358F127EE1211003817FC /* PlotDataClass.swift */; };
+		09A358F527EE123E003817FC /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358F427EE123E003817FC /* TextExportDocument.swift */; };
+		09A358F627EE123E003817FC /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358F427EE123E003817FC /* TextExportDocument.swift */; };
+		09A358F827EE1255003817FC /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358F727EE1255003817FC /* CorePlot.swift */; };
+		09A358F927EE1255003817FC /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358F727EE1255003817FC /* CorePlot.swift */; };
+		09A358FC27EE138A003817FC /* ChangingPlotParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358FB27EE138A003817FC /* ChangingPlotParameters.swift */; };
+		09A358FD27EE138A003817FC /* ChangingPlotParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358FB27EE138A003817FC /* ChangingPlotParameters.swift */; };
+		09A358FF27EE13A9003817FC /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358FE27EE13A9003817FC /* TextView.swift */; };
+		09A3590027EE13A9003817FC /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358FE27EE13A9003817FC /* TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +63,13 @@
 		094E72C627DBB44E005408FF /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		094E72CA27DBB44E005408FF /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		094E72CC27DBB44E005408FF /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		09A358EB27EE10D2003817FC /* Matrix_Form_Schrodinger .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Matrix_Form_Schrodinger .swift"; sourceTree = "<group>"; };
+		09A358EE27EE10DE003817FC /* Potentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potentials.swift; sourceTree = "<group>"; };
+		09A358F127EE1211003817FC /* PlotDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotDataClass.swift; sourceTree = "<group>"; };
+		09A358F427EE123E003817FC /* TextExportDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExportDocument.swift; sourceTree = "<group>"; };
+		09A358F727EE1255003817FC /* CorePlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePlot.swift; sourceTree = "<group>"; };
+		09A358FB27EE138A003817FC /* ChangingPlotParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingPlotParameters.swift; sourceTree = "<group>"; };
+		09A358FE27EE13A9003817FC /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +120,13 @@
 			children = (
 				094E72A627DBB44C005408FF /* Homework_5App.swift */,
 				094E72A727DBB44C005408FF /* ContentView.swift */,
+				09A358EB27EE10D2003817FC /* Matrix_Form_Schrodinger .swift */,
+				09A358EE27EE10DE003817FC /* Potentials.swift */,
+				09A358F127EE1211003817FC /* PlotDataClass.swift */,
+				09A358FE27EE13A9003817FC /* TextView.swift */,
+				09A358F427EE123E003817FC /* TextExportDocument.swift */,
+				09A358FB27EE138A003817FC /* ChangingPlotParameters.swift */,
+				09A358F727EE1255003817FC /* CorePlot.swift */,
 				094E72A827DBB44E005408FF /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -249,6 +277,8 @@
 				Base,
 			);
 			mainGroup = 094E72A027DBB44C005408FF;
+			packageReferences = (
+			);
 			productRefGroup = 094E72AE27DBB44E005408FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,7 +329,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A358EC27EE10D2003817FC /* Matrix_Form_Schrodinger .swift in Sources */,
+				09A358FC27EE138A003817FC /* ChangingPlotParameters.swift in Sources */,
 				094E72D027DBB44E005408FF /* ContentView.swift in Sources */,
+				09A358F227EE1211003817FC /* PlotDataClass.swift in Sources */,
+				09A358F827EE1255003817FC /* CorePlot.swift in Sources */,
+				09A358F527EE123E003817FC /* TextExportDocument.swift in Sources */,
+				09A358FF27EE13A9003817FC /* TextView.swift in Sources */,
+				09A358EF27EE10DE003817FC /* Potentials.swift in Sources */,
 				094E72CE27DBB44E005408FF /* Homework_5App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +345,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A358ED27EE10D2003817FC /* Matrix_Form_Schrodinger .swift in Sources */,
+				09A358FD27EE138A003817FC /* ChangingPlotParameters.swift in Sources */,
 				094E72D127DBB44E005408FF /* ContentView.swift in Sources */,
+				09A358F327EE1211003817FC /* PlotDataClass.swift in Sources */,
+				09A358F927EE1255003817FC /* CorePlot.swift in Sources */,
+				09A358F627EE123E003817FC /* TextExportDocument.swift in Sources */,
+				09A3590027EE13A9003817FC /* TextView.swift in Sources */,
+				09A358F027EE10DE003817FC /* Potentials.swift in Sources */,
 				094E72CF27DBB44E005408FF /* Homework_5App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
