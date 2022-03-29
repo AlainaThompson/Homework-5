@@ -15,13 +15,42 @@ class MatrixEqs: NSObject,ObservableObject {
     var m = 0.510998950
     let hbarsquareoverm = 7.62 /* units of eV A^2*/
     var h = 0.1 //stepsize
-
+    
     
     @Published var selectedPotential = ""
     @Published var enableButton = true
-
+//Energy Values Square Well:
+//E1 = 0.369
+//E = pow(n, 2)*E1
     @Published var E:[Double] = []
     @Published var psi:[Double] = []
+    
+    func infiniteWellEnergy(number: Int) -> Double{
+
+            let E1 = 0.369
+            
+            return E1*pow(Double(number),2)
+        }
+        
+    
+        func wavefunctions(number: Int, x_i: Double) -> Double{
+            let L = xMax
+            let root = sqrt(2/L)
+            let numerator = Double(number)*Double.pi*x_i
+            let psi_i = root*sin(numerator/L)
+            
+            return psi_i
+        }
+        
+        func wavefunctionPotential(){
+            ///expecation value of Psi*V(x)*Psi
+            
+        }
+    
+    
+    
+    
+    
     
     
     
@@ -37,7 +66,7 @@ func calculateHamiltonian(E: Double, xMax: Double, xMin: Double, xStep: Double) 
     let L = xMax
     let h = xStep
     var f_num = (V[0]-E)/schrodingerConstant
-    var matrixSize = 32
+    var matrixSize = 20 //20x20 matrix 
     
     let H = -1.0*hbarsquareoverm/(2*pow(h,2))
     
@@ -70,6 +99,8 @@ func calculateHamiltonian(E: Double, xMax: Double, xMin: Double, xStep: Double) 
             let N = Int32(hamiltonianArray.count)
             
             let flatArray :[Double] = pack2dArray(arr: hamiltonianArray, rows: Int(N), cols: Int(N))
+    
+    // Add in Potential to Hamiltonian
             calculateEigenvalues(arrayForDiagonalization: flatArray)
             
         }
@@ -174,7 +205,57 @@ func calculateHamiltonian(E: Double, xMax: Double, xMin: Double, xStep: Double) 
                 }
             }
             return resultArray
-       
+     
+        func makeWaveFunctionPlot() {
+            plotDataModel!.zeroData()
+
+            plotDataModel!.calculatedText = "The WaveFunction is: \n"
+            plotDataModel!.calculatedText += "x and Psi \n"
+                        
+                      
+
+
+                        
+            //set the Plot Parameters
+            plotDataModel!.changingPlotParameters.yMax = 18.0
+            plotDataModel!.changingPlotParameters.yMin = -18.1
+            plotDataModel!.changingPlotParameters.xMax = 15.0
+            plotDataModel!.changingPlotParameters.xMin = -1.0
+            plotDataModel!.changingPlotParameters.xLabel = "x"
+            plotDataModel!.changingPlotParameters.yLabel = "Psi"
+            plotDataModel!.changingPlotParameters.lineColor = .red()
+            plotDataModel!.changingPlotParameters.title = "Psi vs x"
+                                
+            for i in 0..<x_array.count {
+                plotDataModel!.calculatedText += "\(x_array[i]), \t\(psi_array[i])\n"
+                
+                let dataPoint: plotDataType = [.X: x_array[i], .Y: psi_array[i]]
+                plotDataModel!.appendData(dataPoint: [dataPoint])
+                            
+                        
+                }
+            }
+            
+            
+            
+            
 }
+    @MainActor func setButtonEnable(state: Bool) {
+           if state {
+               Task.init {
+                   await MainActor.run {
+                       self.enableButton = true
+                   }
+               }
+           }
+           else{
+               Task.init {
+                   await MainActor.run {
+                       self.enableButton = false
+                   }
+               }
+           }
+       }
+    
 
 }

@@ -278,6 +278,7 @@
 			);
 			mainGroup = 094E72A027DBB44C005408FF;
 			packageReferences = (
+				09A3590227F34C5F003817FC /* XCRemoteSwiftPackageReference "core-plot" */,
 			);
 			productRefGroup = 094E72AE27DBB44E005408FF /* Products */;
 			projectDirPath = "";
@@ -737,6 +738,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09A3590227F34C5F003817FC /* XCRemoteSwiftPackageReference "core-plot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/core-plot/core-plot/";
+			requirement = {
+				kind = exactVersion;
+				version = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 094E72A127DBB44C005408FF /* Project object */;
 }
