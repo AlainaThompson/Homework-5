@@ -31,6 +31,8 @@
 		09A358FD27EE138A003817FC /* ChangingPlotParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358FB27EE138A003817FC /* ChangingPlotParameters.swift */; };
 		09A358FF27EE13A9003817FC /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358FE27EE13A9003817FC /* TextView.swift */; };
 		09A3590027EE13A9003817FC /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A358FE27EE13A9003817FC /* TextView.swift */; };
+		09A3590427F5E707003817FC /* Wavefunction_rk4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A3590327F5E707003817FC /* Wavefunction_rk4.swift */; };
+		09A3590527F5E707003817FC /* Wavefunction_rk4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A3590327F5E707003817FC /* Wavefunction_rk4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,7 @@
 		09A358F727EE1255003817FC /* CorePlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePlot.swift; sourceTree = "<group>"; };
 		09A358FB27EE138A003817FC /* ChangingPlotParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingPlotParameters.swift; sourceTree = "<group>"; };
 		09A358FE27EE13A9003817FC /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		09A3590327F5E707003817FC /* Wavefunction_rk4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wavefunction_rk4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,7 @@
 				09A358EB27EE10D2003817FC /* Matrix_Form_Schrodinger .swift */,
 				09A358EE27EE10DE003817FC /* Potentials.swift */,
 				09A358F127EE1211003817FC /* PlotDataClass.swift */,
+				09A3590327F5E707003817FC /* Wavefunction_rk4.swift */,
 				09A358FE27EE13A9003817FC /* TextView.swift */,
 				09A358F427EE123E003817FC /* TextExportDocument.swift */,
 				09A358FB27EE138A003817FC /* ChangingPlotParameters.swift */,
@@ -334,6 +338,7 @@
 				09A358FC27EE138A003817FC /* ChangingPlotParameters.swift in Sources */,
 				094E72D027DBB44E005408FF /* ContentView.swift in Sources */,
 				09A358F227EE1211003817FC /* PlotDataClass.swift in Sources */,
+				09A3590427F5E707003817FC /* Wavefunction_rk4.swift in Sources */,
 				09A358F827EE1255003817FC /* CorePlot.swift in Sources */,
 				09A358F527EE123E003817FC /* TextExportDocument.swift in Sources */,
 				09A358FF27EE13A9003817FC /* TextView.swift in Sources */,
@@ -350,6 +355,7 @@
 				09A358FD27EE138A003817FC /* ChangingPlotParameters.swift in Sources */,
 				094E72D127DBB44E005408FF /* ContentView.swift in Sources */,
 				09A358F327EE1211003817FC /* PlotDataClass.swift in Sources */,
+				09A3590527F5E707003817FC /* Wavefunction_rk4.swift in Sources */,
 				09A358F927EE1255003817FC /* CorePlot.swift in Sources */,
 				09A358F627EE123E003817FC /* TextExportDocument.swift in Sources */,
 				09A3590027EE13A9003817FC /* TextView.swift in Sources */,

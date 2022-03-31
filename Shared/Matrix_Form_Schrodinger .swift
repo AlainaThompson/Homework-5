@@ -6,6 +6,7 @@
 //
 import SwiftUI
 import Foundation
+import Accelerate 
 
 class MatrixEqs: NSObject,ObservableObject {
     var plotDataModel: PlotDataClass? = nil
@@ -42,8 +43,9 @@ class MatrixEqs: NSObject,ObservableObject {
             return psi_i
         }
         
-        func wavefunctionPotential(){
-            ///expecation value of Psi*V(x)*Psi
+        func rk4Wavefunction(){
+            //Get wavefunction from the solution to particle in a box case from rk4 method
+            //Use as basis for psi and energy values in hamiltonian 
             
         }
     
@@ -61,7 +63,7 @@ func calculateHamiltonian(E: Double, xMax: Double, xMin: Double, xStep: Double) 
     let schrodingerConstant = hbarsquareoverm/2.0
     
     let V = PotentialData!.V
-
+    let squareWellWavefunction = RK4() //get values from 1D particle in a box solution to plug into matrix.
     var n = xMin
     let L = xMax
     let h = xStep
