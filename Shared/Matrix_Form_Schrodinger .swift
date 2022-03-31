@@ -16,7 +16,7 @@ class MatrixEqs: NSObject,ObservableObject {
     var m = 0.510998950
     let hbarsquareoverm = 7.62 /* units of eV A^2*/
     var h = 0.1 //stepsize
-    
+    var psiSquareWell: [[Double]] = [] //wavefunction solution to 1D particle in a box 
     
     @Published var selectedPotential = ""
     @Published var enableButton = true
@@ -46,7 +46,14 @@ class MatrixEqs: NSObject,ObservableObject {
         func rk4Wavefunction(){
             //Get wavefunction from the solution to particle in a box case from rk4 method
             //Use as basis for psi and energy values in hamiltonian 
-            
+            let oneDSchrodinger = RK4()
+            getPotential.selectedPotential = "Square Well"
+            calculateRK4.xArray = getPotential.x
+            calculateRK4.VArray = getPotential.V
+            calculateRK4.xStep = xStep
+            await calculateRK4.getWavefunction()
+            psiSquareWell = calculateRK4.psi_array
+         
         }
     
     
@@ -63,7 +70,6 @@ func calculateHamiltonian(E: Double, xMax: Double, xMin: Double, xStep: Double) 
     let schrodingerConstant = hbarsquareoverm/2.0
     
     let V = PotentialData!.V
-    let squareWellWavefunction = RK4() //get values from 1D particle in a box solution to plug into matrix.
     var n = xMin
     let L = xMax
     let h = xStep
